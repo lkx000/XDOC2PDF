@@ -1,0 +1,27 @@
+{
+  "headerConfig": {
+    "1": {
+      "mode": "key",
+      "modeConfig": {
+        "splitGroup": [
+          {
+            "position": [0, 3],
+            "style": "font-size: 20px; color: white; text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;",
+            "borderStyle": "background-color: red;"
+          },
+          {
+            "position": [4, 5],
+            "style": "font-size: 20px; color: blue;",
+            "borderStyle": "border: 1px solid blue;"
+          },
+          {
+            "position": [5, 8],
+            "style": "font-size: 24px; color: green;text-shadow:0px 1px 0px #c0c0c0,0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0,0px 4px 0px #909090,0px 5px 10px rgba(0, 0, 0, .9);",
+            "borderStyle": "border: 1px solid green;"
+          }
+        ],
+        "defaultStyle": "display: flex; font-size: 16px; color: black;"
+      }
+    }
+  }
+}

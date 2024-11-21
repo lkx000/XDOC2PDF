@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../web/index.js"></script>
+    <script src="../web/headerConverter.js"></script>
+</head>
+<body>
+    <div class="pdf"></div>
+    <script>
+        const test = async () => {
+            try {
+                const configData = await fetch('./config.json');
+                const config = await configData.json();
+                const html = await fetch('./xdoc.html');
+                const text = await html.text();
+                const pages = await window.xdoc2pdf(text, config);
+                document.body.appendChild(...pages);
+            } catch (error) {
+                console.error('转换失败:', error);
+            }
+        }
+        test()
+    </script>
+</body>
+</html>
